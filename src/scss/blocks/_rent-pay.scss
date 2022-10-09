@@ -1,0 +1,71 @@
+.rent__pay {}
+
+.rent-pay {
+    display: grid;
+    gap: 30px;
+}
+
+.rent-pay__list {
+    display: grid;
+    gap: 20px;
+}
+
+.rent-pay__item {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    cursor: pointer;
+    line-height: 1.4;
+}
+
+.rent-pay__radio--fake {
+    position: relative;
+    display: inline-block;
+    flex-shrink: 0;
+    width: 20px;
+    height: 20px;
+    border: 1px solid var(--color-black);
+    border-radius: 50%;
+    transition: all 0.2s ease-in;
+
+    &::before {
+        content: '';
+        position: absolute;
+        width: 10px;
+        height: 10px;
+        top: 50%;
+        left: 50%;
+        border-radius: 50%;
+        transform: translate(-50%, -50%);
+        transition: all 0.2s ease-in;
+    }
+}
+
+.calculator__radio--real:checked~.rent-pay__radio--fake {
+    border-color: var(--color-orange);
+
+    &::before {
+        background-color: var(--color-orange);
+    }
+}
+
+.rent__btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: var(--font-normal);
+    padding-left: 0;
+    padding-right: 0;
+    max-width: 360px;
+
+    img {
+        padding-left: 10px;
+    }
+}
+
+
+@media screen and(min-width:769px){
+    .rent__btn {
+        max-width: 335px;
+    }
+}

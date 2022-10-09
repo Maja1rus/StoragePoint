@@ -1,0 +1,32 @@
+.breadcrumb {
+    padding-top: 40px;
+    padding-bottom: 40px;
+
+    color: var(--color-dark-gray);
+
+    ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+
+    li:first-child {
+        position: relative;
+        padding-left: 16px;
+        ::after {
+            content: '';
+            position: absolute;
+            background-image: url("../img/icons/icon-arrow-left.svg");
+            width: 6px;
+            height: 12px;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            left: 0;
+        }
+    }
+
+    a {
+        text-decoration: none;
+        color: inherit;
+    }
+}

@@ -1,0 +1,41 @@
+.rent {
+    padding-top: 40px;
+    padding-bottom: 60px;
+}
+
+.rent__form {
+    display: grid;
+    gap: 60px;
+}
+
+.rent__top-text {
+    display: grid;
+    gap: 10px;
+}
+
+.rent__section {
+    font-size: var(--size-normal-big);
+}
+
+.rent__price {
+    display: grid;
+    gap: 30px;
+
+    p {
+        margin: 0;
+        max-width: 490px;
+        font-size: var(--size-subtitle-small);
+    }
+}
+
+
+@media screen and(min-width:769px) {
+    .rent {
+        padding-top: 60px;
+        padding-bottom: 120px;
+    }
+
+    .rent__price {
+        gap: 20px;
+    }
+}

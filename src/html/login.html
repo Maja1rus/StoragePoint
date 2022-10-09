@@ -1,0 +1,20 @@
+<section class="container login">
+    <form class="login__form" method="POST">
+        <div class="login__wrap">
+            <span class="login__title">Войти / <br> Зарегистрироваться</span>
+            <input type="text" class="login__input login-name" placeholder="Имя" data-input="name" name="name">
+            <input type="text" class="login__input input-phone login-phone" placeholder="Телефон" data-input="phone" name="phone">
+            <button type="button" class="btn btn__orange btn__request">Получить код</button>
+        </div>
+        <div class="login__wrap">
+            <div class="login__text">
+                <span class="login__title">Введите код</span>
+                <span class="login__subtitle">Мы отправили код подтверждения на номер <br>
+                    <span class="login__phone">+7999999999</span></span>
+            </div>
+            <input type="text" class="login__input confirm-code" placeholder="Код" data-input="code" name="code">
+            <button type="submit" class="btn btn__orange btn__send">Войти</button>
+            <button class="btn login__reopen">Отправить смс повторно</button>
+        </div>
+    </form>
+</section>

@@ -1,0 +1,88 @@
+.contact {
+    .take__list {
+        padding-top: 0;
+        padding-left: 25px;
+        padding-bottom: 40px;
+        padding-right: 0;
+        font-size: var(--size-normal-big);
+
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+    }
+
+    .title {
+        padding-bottom: 30px;
+    }
+}
+
+.contact__wrap {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 60px;
+}
+
+.contact__list {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.contact__social {
+    display: flex;
+    gap: 30px;
+}
+
+.whatsapp,
+.telegram {
+    circle {
+        transition: all 0.2s ease-in;
+    }
+
+    svg {
+        fill: var(--color-white);
+    }
+
+    text-decoration: none;
+
+    &:hover {
+        svg {
+            opacity: 0.8;
+        }
+    }
+}
+
+
+.map {
+    background-image: url(../img/bg/map-bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 500px;
+    border-radius: 10px;
+}
+
+.search-placemark-icons__active {
+    color: #f33;
+}
+
+@media screen and(min-width:769px) {
+    .contact__list {
+        padding-left: 0px;
+    }
+}
+
+@media screen and(min-width:1025px) {
+    .contact {
+        .title {
+            padding-bottom: 60px;
+        }
+    }
+
+    .contact__wrap {
+        grid-template-columns: 470px 1fr;
+    }
+
+    .contact__social {
+        gap: 20px;
+    }
+}

@@ -1,0 +1,54 @@
+//Vendors
+@import "./vendors/swiper";
+
+// Base
+@import "./base/base.scss";
+@import "./base/fonts";
+@import "./base/variables";
+
+// Blocks
+// index
+@import "./blocks/header";
+@import "./blocks/fixed";
+@import "./blocks/main-info";
+@import "./blocks/take";
+@import "./blocks/advantages";
+@import "./blocks/steps";
+@import "./blocks/selecting";
+@import "./blocks/slider";
+@import "./blocks/question";
+@import "./blocks/contact";
+
+
+
+@import "./blocks/breadcrumb";
+
+// calculator
+
+@import "./blocks/calculator";
+@import "./blocks/checkbox";
+@import "./blocks/calculator-price";
+@import "./blocks/products";
+
+//login
+@import "./blocks/login";
+
+//cabinet
+@import "./blocks/orders";
+
+//ren-add
+@import "./blocks/rent";
+@import "./blocks/rent-pay";
+
+//admin-panel
+@import "./blocks/admin-table";
+@import "./blocks/filter";
+
+//edit
+@import "./blocks/edit-form";
+
+//popup
+@import "./blocks/popup";
+
+
+@import "./blocks/footer";

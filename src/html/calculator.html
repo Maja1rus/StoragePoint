@@ -1,0 +1,143 @@
+<section class="container calculator" id="calculator">
+    <h1 class="title">Выберите секцию <br> для брони</h1>
+    <form method="POST" class="calculator__form rent__form">
+        <div class="calculator__section">
+            <label class="calculator__radio" data-id="1" data-price="100">
+                <div class="calculator__img">
+                    <img src="@img/calculator/calculator-01.png" alt="Секция S">
+                </div>
+                <input type="checkbox" name="section-s" class="calculator__radio--real" value="true" checked>
+                <div class="calculator__border"></div>
+                <span class="calculator__check">
+                    <svg width="16" height="11">
+                        <use xlink:href="img/icons/sprites.svg#icon-check"></use>
+                    </svg>
+                </span>
+                <h2 class="calculator__title">Секция S</h2>
+                <span class="calculator__info">1.8-2.7</span>
+                <p class="calculator__subtitle">Небольшая мебель, спортивный инвентарь, личные и сезонные вещи</p>
+            </label>
+            <label class="calculator__radio" data-id="2" data-price="100">
+                <div class="calculator__img">
+                    <img src="@img/calculator/calculator-02.png" alt="Секция M">
+                </div>
+                <input type="checkbox" name="section-m" class="calculator__radio--real" value="true">
+                <div class="calculator__border"></div>
+                <span class="calculator__check">
+                    <svg width="16" height="11">
+                        <use xlink:href="img/icons/sprites.svg#icon-check"></use>
+                    </svg>
+                </span>
+                <h2 class="calculator__title">Секция M</h2>
+                <span class="calculator__info">3.3-4.7</span>
+                <p class="calculator__subtitle">Мебель с однокомнатной квартиры, личные вещи. Идеально для архивов</p>
+            </label>
+            <label class="calculator__radio" data-id="3" data-price="100">
+                <div class="calculator__img">
+                    <img src="@img/calculator/calculator-03.png" alt="Секция L">
+                </div>
+                <input type="checkbox" name="section-l" class="calculator__radio--real" value="true">
+                <div class="calculator__border"></div>
+                <span class="calculator__check">
+                    <svg width="16" height="11">
+                        <use xlink:href="img/icons/sprites.svg#icon-check"></use>
+                    </svg>
+                </span>
+                <h2 class="calculator__title">Секция L</h2>
+                <span class="calculator__info">5.3-6.2</span>
+                <p class="calculator__subtitle">Мебель из двухкомнатной квартиры или дачного дома, садовый инвентарь</p>
+            </label>
+            <label class="calculator__radio" data-id="4" data-price="100">
+                <div class="calculator__img">
+                    <img src="@img/calculator/calculator-04.png" alt="Секция XL">
+                </div>
+                <input type="checkbox" name="section-xl" class="calculator__radio--real" value="true">
+                <div class="calculator__border"></div>
+                <span class="calculator__check">
+                    <svg width="16" height="11">
+                        <use xlink:href="img/icons/sprites.svg#icon-check"></use>
+                    </svg>
+                </span>
+                <h2 class="calculator__title">Секция XL</h2>
+                <span class="calculator__info">7</span>
+                <p class="calculator__subtitle">Мебель и техника из трехкомнатной квартиры, садовый инвентарь</p>
+            </label>
+            <label class="calculator__radio" data-id="5" data-price="100">
+                <div class="calculator__img">
+                    <img src="@img/calculator/calculator-05.png" alt="Секция XXL">
+                </div>
+                <input type="checkbox" name="section-xxl" class="calculator__radio--real" value="true">
+                <div class="calculator__border"></div>
+                <span class="calculator__check">
+                    <svg width="16" height="11">
+                        <use xlink:href="img/icons/sprites.svg#icon-check"></use>
+                    </svg>
+                </span>
+                <h2 class="calculator__title">Секция XXL</h2>
+                <span class="calculator__info">28.6</span>
+                <p class="calculator__subtitle">Идеально для малого и среднего бизнеса</p>
+            </label>
+            <label class="calculator__radio calculator__multiple" data-id="6" data-price="100">
+                <div class="calculator__img">
+                    <img src="@img/calculator/calculator-06.png" alt="Велосипедная">
+                </div>
+                <input type="checkbox" class="calculator__radio--real section__multiple checkbox-js"
+                    value="Велосипедная">
+                <div class="calculator__border"></div>
+                <span class="calculator__check">
+                    <svg width="16" height="11">
+                        <use xlink:href="img/icons/sprites.svg#icon-check"></use>
+                    </svg>
+                </span>
+                <h2 class="calculator__title">Велосипедная</h2>
+                <p class="calculator__subtitle">Идеально для сезонного хранения велосипедов</p>
+                <div class="calculator__count count-js">
+                    <button type="button" class="btn btn__minus" disabled></button>
+                    <input type="number" class="input__count " name="bicycle" value="0"
+                        min="0">
+                    <button type="button" class="btn btn__plus"></button>
+                </div>
+            </label>
+            <label class="calculator__radio calculator__multiple" data-id="62" data-price="100">
+                <div class="calculator__img">
+                    <img src="@img/calculator/calculator-06.png" alt="Велосипедная">
+                </div>
+                <input type="checkbox" class="calculator__radio--real section__multiple checkbox-js"
+                    value="Велосипедная">
+                <div class="calculator__border"></div>
+                <span class="calculator__check">
+                    <svg width="16" height="11">
+                        <use xlink:href="img/icons/sprites.svg#icon-check"></use>
+                    </svg>
+                </span>
+                <h2 class="calculator__title">Велосипедная</h2>
+                <p class="calculator__subtitle">Идеально для сезонного хранения велосипедов</p>
+                <div class="calculator__count count-js">
+                    <button type="button" class="btn btn__minus" disabled></button>
+                    <input type="number" class="input__count " name="bicycle" value="0"
+                        min="0">
+                    <button type="button" class="btn btn__plus"></button>
+                </div>
+            </label>
+            <div class="calculator__radio calculator__cloud">
+                <div class="calculator__img">
+                    <img src="@img/calculator/calculator-07.png" alt="Велосипедная">
+                </div>
+                <div class="calculator__item">
+                    <input type="checkbox" class="calculator__radio--real section__cloud" value="true">
+                    <div class="calculator__border"></div>
+                    <span class="calculator__check">
+                        <svg width="16" height="11">
+                            <use xlink:href="img/icons/sprites.svg#icon-check"></use>
+                        </svg>
+                    </span>
+                    <h2 class="calculator__title">Облачное хранение</h2>
+                    <p class="calculator__subtitle">Хранение абсолютно других грузов — от товаров массового потребления до грузов любого размера</p>
+                </div>
+                @@include('calculator-cloud-option.html')
+            </div>
+        </div>
+        @@include('calculator-price.html')
+    </form>
+    @@include('products.html')
+</section>

@@ -1,0 +1,248 @@
+.header {
+    position: relative;
+    padding: 14px 0;
+    box-shadow: 0px 4px 4px rgba(46, 43, 43, 0.06);
+    z-index: 10;
+}
+
+.header .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header__logo {
+    z-index: 2;
+    flex-shrink: 0;
+
+    img {
+        display: inline-block;
+        transition: all 0.2s ease-in;
+        width: 147px;
+        height: 44px;
+    }
+}
+
+.header__nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 40px;
+    position: absolute;
+    height: 100vh;
+    width: 100%;
+    top: 0;
+    left: 0;
+    color: var(--color-white);
+    background-color: var(--color-dark-gray);
+    transform: translateX(-150%);
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.2s ease-in;
+}
+
+.header__nav--active {
+    opacity: 1;
+    visibility: visible;
+    transform: translate(0%);
+    transition: all 0.2s ease-in;
+}
+
+.header__link {
+    text-decoration: none;
+    color: var(--color-white);
+    font-size: 1.25rem;
+    white-space: nowrap;
+    transition: all 0.2s ease-in;
+
+    &:hover {
+        color: var(--color-orange);
+    }
+}
+
+.header__btns {
+    display: grid;
+    gap: 40px;
+    text-align: center;
+
+    .btn__orange-border {
+        color: var(--color-white);
+    }
+
+}
+
+.btn__nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    width: 40px;
+    height: 40px;
+    border: none;
+    z-index: 2;
+    border-radius: 0;
+}
+
+.btn__icon {
+    display: inline-block;
+    position: relative;
+    height: 2px;
+    width: 30px;
+    background-color: var(--color-black);
+    border-radius: 50px;
+    transition: all 0.2s ease-in-out;
+
+    &::after,
+    &::before {
+        content: '';
+        position: absolute;
+        left: 0;
+        height: 2px;
+        width: 30px;
+        background-color: var(--color-black);
+        border-radius: 50px;
+        transition: all 0.2s ease-in-out;
+    }
+
+    &::after {
+        top: 10px;
+    }
+
+    &::before {
+        bottom: 10px;
+    }
+}
+
+.btn__icon--active {
+    background-color: transparent;
+
+    &::after {
+        top: 0;
+        transform: rotate(45deg);
+        background-color: var(--color-white);
+    }
+
+    &::before {
+        bottom: 0;
+        transform: rotate(-45deg);
+        background-color: var(--color-white);
+
+    }
+}
+
+@media screen and(min-width: 769px) {
+    .header {
+        box-shadow: none;
+    }
+
+    .header .container {
+        gap: 10px;
+    }
+
+    .btn__nav {
+        display: none;
+    }
+
+    .header__link {
+        font-size: var(--size-normal-small);
+        color: var(--color-black);
+    }
+
+    .header__nav {
+        flex-direction: row;
+        justify-content: center;
+        gap: 10px;
+        visibility: visible;
+        position: relative;
+        height: auto;
+        background-color: transparent;
+        color: var(--color-black);
+        opacity: 1;
+        transform: translateX(0%);
+    }
+
+    .header__btns {
+        display: flex;
+        gap: 20px;
+
+        .btn__orange-border {
+            color: var(--color-black);
+
+            &:hover {
+                color: var(--color-white);
+            }
+        }
+    }
+
+    .header__btns {
+        .btn {
+            padding-left: 17px;
+            padding-right: 17px;
+            padding-top: 13px;
+            padding-bottom: 13px;
+            font-size: 1rem;
+        }
+    }
+
+    .header__contact {
+        display: none;
+    }
+}
+
+
+@media screen and(min-width: 811px) {
+    .header__link {
+        font-size: var(--size-normal);
+    }
+}
+
+@media screen and(min-width: 900px) {
+    .header__contact {
+        display: block;
+    }
+}
+
+@media screen and(min-width: 1061px) {
+    .header .container {
+        gap: 20px;
+    }
+
+    .header__btns {
+        .btn {
+            padding-left: 39px;
+            padding-right: 39px;
+            padding-top: 17px;
+            padding-bottom: 17px;
+            font-size: var(--size-normal);
+        }
+    }
+}
+
+@media screen and(min-width: 1200px) {
+    .header .container {
+        gap: 80px;
+    }
+
+    .header__nav {
+        justify-content: space-between;
+    }
+
+    .header__logo {
+        width: 214px;
+        height: 62px;
+
+        img {
+            width: 100%;
+            height: 100%;
+        }
+    }
+}
+
+@media screen and(min-width: 1400px) {
+    .header__logo {
+        width: 282px;
+        height: 62px;
+        flex-shrink: 1;
+    }
+}

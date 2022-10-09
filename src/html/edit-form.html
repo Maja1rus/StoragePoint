@@ -1,0 +1,80 @@
+<section class="container edit">
+    <span class="subtitle">Заказ №12134</span>
+    <form class="edit__form">
+        <div class="edit__item">
+            <span class="edit__title">Аренда</span>
+            <label class="edit__option">
+                Бокс
+                <input type="text" class="edit__input" value="1243455" placeholder="Бокс" name="box-number">
+            </label>
+            <label class="edit__option">
+                Период оплаты
+                <input type="text" class="edit__input" value="12.02.2022 - 11.03.2022" placeholder="Период оплаты"
+                    name="timeline">
+            </label>
+            <label class="edit__option edit__select">
+                Тариф
+                <select class="" name="tariff">
+                    <option value="1 месяц">1 месяц</option>
+                    <option value="3 месяца">3 месяца</option>
+                    <option value="6 месяцев">6 месяцев</option>
+                    <option value="12 месяцев">12 месяцев</option>
+                </select>
+            </label>
+            <label class="edit__option">
+                Статус смс-информирования
+                <input type="text" class="edit__input" value="12.02.2022 - 11.03.2022"
+                    placeholder="Статус смс-информирования" name="inform">
+            </label>
+        </div>
+        <div class="edit__item">
+            <span class="edit__title">Персональные данные клиента</span>
+            <label class="edit__option">
+                ФИО полностью
+                <input type="text" class="edit__input" value="Ивановченко Станислав" placeholder="ФИО полностью"
+                    name="name">
+            </label>
+            <div class="edit__group edit__group--second">
+                <label class="edit__option">
+                    Телефон
+                    <input type="text" class="edit__input" value="+7(777)777777" placeholder="Телефон" name="phone">
+                </label>
+                <label class="edit__option">
+                    Почта
+                    <input type="text" class="edit__input" value="mail@mail.ru" placeholder="Почта" name="email">
+                </label>
+            </div>
+            <div class="edit__group edit__group--three">
+                <label class="edit__option">
+                    Серия паспорта
+                    <input type="text" class="edit__input" value="2222" placeholder="Серия паспорта"
+                        name="passport-series">
+                </label>
+                <label class="edit__option">
+                    Номер паспорта
+                    <input type="text" class="edit__input" value="222222" placeholder="Номер паспорта"
+                        name="passport-number">
+                </label>
+                <label class="edit__option">
+                    Дата выдачи
+                    <input type="text" class="edit__input" value="22.22.2022" placeholder="Дата выдачи"
+                        name="issue-date">
+                </label>
+            </div>
+            <label class="edit__option">
+                Прописка
+                <input type="text" class="edit__input" value="Прописка" placeholder="Прописка" name="registration">
+            </label>
+        </div>
+        <div class="edit__btns">
+            <input type="submit" class="btn btn__submit" value="Сохранить">
+            <button class="btn">Отправить договор</button>
+            <button class="btn btn__print">
+                <svg width="24" height="24">
+                    <use xlink:href="img/icons/sprites.svg#icon-print"></use>
+                </svg>
+                Распечатать договор
+            </button>
+        </div>
+    </form>
+</section>

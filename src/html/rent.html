@@ -1,0 +1,40 @@
+<section class="container rent">
+    <form class="rent__form" method="POST">
+        <div class="rent__top-text">
+            <div class="subtitle">Продлить аренду</div>
+            <span class="rent__section">Секция S Номер 8</span>
+        </div>
+        @@include('price.html')
+
+        <div class="rent__price">
+            <span class="subtitle">3000 ₽ в месяц</span>
+            <p>Итого 3000 ₽ (вместо 3400 ₽) при оплате за 6 месяцев </p>
+        </div>
+
+        <div class="rent__pay rent-pay">
+            <span class="subtitle">Способ оплаты</span>
+            <div class="rent-pay__list">
+                <label class="rent-pay__item">
+                    <input type="radio" name="rent-pay"  class="calculator__radio--real" value="Оплата онлайн" checked>
+                    <span class="rent-pay__radio--fake"></span>
+                    Оплата онлайн
+                </label>
+                <label class="rent-pay__item">
+                    <input type="radio" name="rent-pay"  class="calculator__radio--real" value="Оплата онлайн по подписке">
+                    <span class="rent-pay__radio--fake"></span>
+                    Оплата онлайн по подписке. Скидка 20%
+                </label>
+                <label class="rent-pay__item">
+                    <input type="radio" name="rent-pay"  class="calculator__radio--real" value="Наличный расчет">
+                    <span class="rent-pay__radio--fake"></span>
+                    Наличный расчет
+                </label>
+            </div>
+        </div>
+
+        <button type="submit" class="btn btn__orange rent__btn">
+            Оплатить
+            <img src="@img/icons/icon-arrow-right.svg" alt="Оплатить">
+        </button>
+    </form>
+</section>

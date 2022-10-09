@@ -1,0 +1,113 @@
+.selecting {
+    background-color: var(--color-gray);
+
+    .title {
+        padding-bottom: 30px;
+    }
+}
+
+.selecting__wrap {
+    display: grid;
+    gap: 30px;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    // grid-template-rows: repeat(auto-fit, minmax(493px, 1fr));
+    grid-template-rows: 1fr 1fr;
+}
+
+.selecting__calculator {
+    position: relative;
+
+    &::before {
+        content: '';
+        position: absolute;
+        bottom: -4px;
+        right: 0;
+        width: 195px;
+        height: 184px;
+        background-image: url('../img/icons/icon-calculator.svg');
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: center;
+    }
+
+    .btn {
+        display: flex;
+        justify-content: center;
+        font-size: var(--size-normal);
+    }
+}
+
+.selecting__calculator,
+.selecting__info {
+    border-radius: 10px;
+    background-color: var(--color-white);
+    padding: 40px 10px;
+}
+
+.selecting__title {
+    position: relative;
+    margin: 0;
+    padding-bottom: 20px;
+    font-size: var(--size-subtitle-medium);
+    font-weight: var(--font-medium);
+}
+
+.selecting__subtitle {
+    position: relative;
+    margin: 0;
+    padding-bottom: 40px;
+}
+
+.selecting__btns {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+
+    .btn {
+        position: relative;
+
+        img {
+            width: 33px;
+            height: 33px;
+        }
+    }
+}
+
+
+@media screen and(min-width:500px) {
+    .selecting__calculator {
+        .btn {
+            display: inline-block;
+        }
+    }
+
+    .selecting__btns {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: flex-start;
+
+        .btn {
+            width: 190px;
+        }
+    }
+
+    .selecting__wrap {
+        grid-template-rows: 1fr;
+    }
+
+}
+
+@media screen and(min-width:769px) {
+    .selecting {
+        .title {
+            padding-bottom: 60px;
+        }
+    }
+
+    .selecting__wrap {}
+
+    .selecting__calculator,
+    .selecting__info {
+        padding: 45px 40px;
+    }
+}

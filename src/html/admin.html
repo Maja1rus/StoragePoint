@@ -1,0 +1,95 @@
+<section class=" container admin">
+    <span class="subtitle">Администратор</span>
+    @@include('filter.html')
+    <table class="admin__table">
+        <thead class="admin__thead">
+            <tr>
+                <th>№ заказа</th>
+                <th>Бокс</th>
+                <th>ФИО полностью</th>
+                <th>Тариф</th>
+                <th>Телефон</th>
+                <th>Период оплаты</th>
+                <th>Статус смс информир.</th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody class="admin__tbody">
+            <tr data-link="edit.html" data-link-shere="https://точкахранения.рф/d/7gWr40bCFL3BQQ1">
+                <td data-label="№ заказа">1234345565</td>
+                <td data-label="Бокс">2845645</td>
+                <td data-label="ФИО полностью">Ивановченко Станислав Иванович</td>
+                <td data-label="Тариф">Макс. 12 мес</td>
+                <td data-label="Телефон">+79999999999</td>
+                <td data-label="Период оплаты" class="price-err">12.02.2022- 11.03.2022</td>
+                <td data-label="Статус смс информир.">23.01.2022 отправлена... </td>
+                <td class="admin-option">
+                    <button class="btn btn-table">
+                        <svg width="30" height="30" role="icon" aria-label="Опции">
+                            <use xlink:href="img/icons/sprites.svg#icon-dotte"></use>
+                        </svg>
+                        <span class="btn-table__text">Действие</span>
+                    </button>
+                    <ul class="admin-option__wrap"></ul>
+                </td>
+            </tr>
+            <tr data-link="edit.html" data-link-shere="https://точкахранения.рф/d/7gWr40bCFL3BQQ2">
+                <td data-label="№ заказа">1234345565</td>
+                <td data-label="Бокс">2845645</td>
+                <td data-label="ФИО полностью">Ивановченко Станислав Иванович</td>
+                <td data-label="Тариф">Макс. 12 мес</td>
+                <td data-label="Телефон">+79999999999</td>
+                <td data-label="Период оплаты">12.02.2022- 11.03.2022</td>
+                <td data-label="Статус смс информир.">23.01.2022 отправлена... </td>
+                <td class="admin-option">
+                    <button class="btn btn-table">
+                        <svg width="30" height="30" role="icon" aria-label="Опции">
+                            <use xlink:href="img/icons/sprites.svg#icon-dotte"></use>
+                        </svg>
+                        <span class="btn-table__text">Действие</span>
+                    </button>
+                    <ul class="admin-option__wrap"></ul>
+                </td>
+            </tr>
+            <tr data-link="edit.html" data-link-shere="https://точкахранения.рф/d/7gWr40bCFL3BQQ3">
+                <td data-label="№ заказа">123434556</td>
+                <td data-label="Бокс">2845645</td>
+                <td data-label="ФИО полностью">Ивановченко Станислав Иванович</td>
+                <td data-label="Тариф">Макс. 12 мес</td>
+                <td data-label="Телефон">+79999999999</td>
+                <td data-label="Период оплаты" class="price-warn">12.02.2022- 11.03.2022</td>
+                <td data-label="Статус смс информир.">23.01.2022 отправлена... </td>
+                <td class="admin-option">
+                    <button class="btn btn-table">
+                        <svg width="30" height="30" role="icon" aria-label="Опции">
+                            <use xlink:href="img/icons/sprites.svg#icon-dotte"></use>
+                        </svg>
+                        <span class="btn-table__text">Действие</span>
+                    </button>
+                    <ul class="admin-option__wrap"></ul>
+                </td>
+                </td>
+            </tr>
+            <tr class="admin__free" data-link="edit.html" data-link-shere="https://точкахранения.рф/d/7gWr40bCFL3BQQ4">
+                <td data-label="№ заказа">123434556</td>
+                <td data-label="Бокс">2845645</td>
+                <td data-label="ФИО полностью">Пусто</td>
+                <td data-label="Тариф">Не выбран</td>
+                <td data-label="Телефон">Пусто</td>
+                <td data-label="Период оплаты">Не выбрано</td>
+                <td data-label="Статус смс информир.">Не выбрано</td>
+                <td class="admin-option">
+                    <button class="btn btn-table">
+                        <svg width="30" height="30" role="icon" aria-label="Опции">
+                            <use xlink:href="img/icons/sprites.svg#icon-dotte"></use>
+                        </svg>
+                        <span class="btn-table__text">Действие</span>
+                    </button>
+                    <ul class="admin-option__wrap"></ul>
+                </td>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    @@include('popup-shere.html')
+</section>

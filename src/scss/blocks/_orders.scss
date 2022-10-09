@@ -1,0 +1,146 @@
+.orders {
+    padding-top: 40px;
+    padding-bottom: 40px;
+
+    .subtitle {
+        padding-bottom: 40px;
+    }
+}
+
+
+
+.orders__wrap {
+    display: grid;
+    gap: 20px;
+    padding-bottom: 40px;
+}
+
+.orders__item {
+    display: grid;
+    gap: 40px;
+    padding: 40px 10px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.15);
+    border-radius: 6px;
+
+    &:hover {
+        box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.15);
+    }
+}
+
+.orders__text {
+    display: grid;
+    gap: 26px;
+}
+
+.orders__btns {
+    display: grid;
+    gap: 20px;
+
+    .btn__orange {
+        padding-top: 14px;
+        padding-bottom: 14px;
+        padding-left: 0;
+        padding-right: 0;
+        width: 100%;
+        font-size: 1rem;
+        line-height: 1;
+        text-align: center;
+    }
+
+    .orders__cancel {
+        font-size: 1rem;
+        border: none;
+        text-align: center;
+        width: 100%;
+    }
+}
+
+.orders__list {
+    display: grid;
+    gap: 15px;
+}
+
+.orders__subtitle {
+    font-size: var(--size-normal-small);
+    color: #8D8D8D;
+}
+
+.orders__info {
+    font-size: var(--size-normal);
+    color: #2E2B2B;
+}
+
+.orders__add {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    max-width: 280px;
+    color: var(--color-orange);
+    padding-left: 0;
+    padding-right: 0;
+
+    svg {
+        padding-right: 10px;
+        transition: all 0.2s ease-in;
+        stroke: var(--color-orange);
+        fill: var(--color-orange);
+    }
+    &:hover {
+        svg {
+            stroke: var(--color-white);
+            fill: var(--color-white);
+        }
+    }
+}
+
+@media screen and(min-width:470px) {
+    .orders__btns {
+        justify-items: start;
+        grid-template-columns: 240px;
+    }
+}
+
+@media screen and(min-width:570px) {
+    .orders__item {
+        align-items: center;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .orders__btns {
+        align-content: center;
+        justify-content: end;
+    }
+}
+
+@media screen and(min-width:769px) {
+    .orders {
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+
+    .orders__wrap {
+        padding-bottom: 50px;
+    }
+
+    .orders__title {
+        padding-bottom: 50px;
+    }
+}
+
+@media screen and(min-width:900px) {
+    .orders__text {
+        grid-template-columns: auto auto auto;
+    }
+}
+
+@media screen and(min-width:1025px) {
+    .orders__item {
+        padding: 30px 40px;
+    }
+
+    .orders__btns {
+        gap: 15px;
+        grid-template-columns: 240px 187px;
+    }
+}

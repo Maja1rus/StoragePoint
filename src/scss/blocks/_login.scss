@@ -1,0 +1,121 @@
+.login {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+.login__form {}
+
+.login__wrap {
+    display: grid;
+    justify-items: center;
+    gap: 30px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.15);
+    border-radius: 6px;
+    padding: 40px 10px 60px 10px;
+    max-width: 490px;
+    transition: all 0.2s ease-in-out;
+
+
+    &.hidden {
+        opacity: 0;
+        visibility: hidden;
+        position: absolute;
+        transform: translateX(-150%);
+
+    }
+
+    &.active {
+        opacity: 1;
+        visibility: visible;
+        position: relative;
+        transform: translateX(0%);
+    }
+}
+
+.login__text {
+    display: grid;
+    gap: 5px;
+}
+
+.login__title {
+    font-size: var(--size-subtitle-small);
+    font-weight: var(--font-medium);
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+.login__subtitle {
+    text-align: center;
+}
+
+.login__input {
+    max-width: 100%;
+    padding: 16px 30px;
+    background-color: var(--color-gray-light);
+    font-size: var(--font-normal);
+    border: none;
+    border-radius: 10px;
+}
+
+.login {
+    .btn__orange {
+        display: inline-block;
+        text-align: center;
+        width: 100%;
+        max-width: 280px;
+        font-size: var(--font-normal);
+    }
+
+    .login__btn {
+        max-width: 200px;
+    }
+}
+
+
+.login__reopen {
+    border: none;
+    padding: 5px;
+    color: #007EFF;
+    font-size: var(--font-normal);
+    font-weight: var(--font-medium);
+}
+
+
+.btn__send:disabled, 
+.btn__request:disabled {
+    background-color: rgba(255, 132, 1, 0.6);
+    border-color: transparent;
+
+    &:hover {
+        box-shadow: none;
+    }
+}
+
+@media screen and(min-width:769px) {
+    .login__wrap {
+        padding: 40px 70px 60px 70px;
+        gap: 40px;
+        width: 590px;
+    }
+
+    .login__input {
+        width: 85%;
+
+
+    }
+
+    .login {
+        .btn__orange {
+            width: 100%;
+            max-width: 490px;
+        }
+
+        .login__btn {
+            max-width: 400px;
+        }
+    }
+
+}

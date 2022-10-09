@@ -1,0 +1,157 @@
+.calculator-price {
+    padding-top: 100px;
+    padding-bottom: 120px;
+
+    .title {
+        padding-bottom: 40px;
+    }
+}
+
+.calculator-price__wrap {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+}
+
+.calculator-price__item {
+    position: relative;
+    display: grid;
+    align-items: end;
+    gap: 20px;
+    padding: 50px 30px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.15);
+    border-radius: 6px;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+
+    &:hover {
+        box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.15);
+    }
+}
+
+.calculator-price__timeline {
+    text-align: center;
+
+}
+
+.calculator-price__sale {
+    text-align: center;
+    font-size: var(--size-subtitle-small);
+    font-weight: var(--font-medium);
+}
+
+.calculator-price__btn {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    font-weight: var(--font-medium);
+
+    img {
+        position: relative;
+        width: 16px;
+        height: 11px;
+        opacity: 0;
+        visibility: hidden;
+        left: -100px;
+        top: 4px;
+        transition: all 0.2s ease-in;
+    }
+
+    &::after {
+        position: absolute;
+        content: 'Выбрать';
+        top: 50%;
+        transform: translate(0%, -50%);
+        transition: all 0.2s ease-in;
+        line-height: 1;
+    }
+
+    &::before {
+        content: 'Выбрано';
+        color: transparent;
+        transition: all 0.2s ease-in;
+        line-height: 1;
+
+    }
+}
+
+.calculator__radio--real:checked~.calculator-price__btn {
+    background-color: transparent;
+    color: var(--color-orange);
+
+    img {
+        opacity: 1;
+        visibility: visible;
+        left: -88px;
+        transition: all 0.2s ease-in;
+    }
+
+    &::after {
+        left: 50%;
+        color: transparent;
+        transition: all 0.2s ease-in;
+    }
+
+    &::before {
+        content: 'Выбрано';
+        top: 50%;
+        left: 50%;
+        transform: translate(30%, 0%);
+        color: var(--color-orange);
+        transition: all 0.2s ease-in;
+    }
+}
+
+.calculator-price__summary {
+    display: inline-block;
+    font-size: var(--size-big);
+    font-weight: var(--font-medium);
+    padding-bottom: 30px;
+}
+
+.calculator-price__info {
+    font-size: 1.750rem;
+    font-weight: var(--font-medium);
+    padding-bottom: 30px;
+    width: 100%;
+    max-width: 1000px;
+}
+
+.calculator-price__delivery {
+    padding-bottom: 40px;
+}
+
+@media screen and(min-width:550px) {
+    .calculator-price__wrap {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media screen and(min-width:769px) {
+    .calculator-price__summary {
+        padding-bottom: 50px;
+    }
+
+    .calculator-price__delivery {
+        padding-bottom: 50px;
+    }
+
+
+    .calculator-price__info {
+        font-size: var(--size-subtitle);
+    }
+
+}
+
+@media screen and(min-width:1025px) {
+    .calculator-price__wrap {
+        gap: 10px;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+}
+
+@media screen and(min-width:1110px) {
+    .calculator-price__wrap {
+        gap: 30px;
+    }
+}
